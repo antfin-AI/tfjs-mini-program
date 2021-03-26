@@ -1,0 +1,1 @@
+export { MimiProgramPlatform } from './platform';
