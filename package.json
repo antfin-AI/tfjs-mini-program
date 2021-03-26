@@ -19,6 +19,12 @@
     "fetch-wechat": "0.0.3",
     "text-encoder": "0.0.4"
   },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.0",
     "@tensorflow/tfjs-backend-webgl": "2.8.6",
