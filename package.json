@@ -1,0 +1,37 @@
+{
+  "name": "tfjs-mini-program",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "father build",
+    "lint": "tslint -p . -t verbose",
+    "run-browserstack": "karma start --singleRun --browsers='bs_chrome_mac' --reporters='dots,karma-typescript,BrowserStack'",
+    "test": "karma start",
+    "test-ci": "yarn lint && yarn run-browserstack"
+  },
+  "resolutions": {
+    "**/**/https-proxy-agent": "2.2.3",
+    "**/**/set-value": "3.0.1"
+  },
+  "dependencies": {
+    "abab": "2.0.0",
+    "fetch-wechat": "0.0.3",
+    "text-encoder": "0.0.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.0",
+    "@tensorflow/tfjs-backend-webgl": "2.8.6",
+    "@tensorflow/tfjs-core": "2.8.6",
+    "@types/jasmine": "~2.8.6",
+    "clang-format": "1.2.4",
+    "father": "^2.30.2",
+    "jasmine-core": "~3.1.0",
+    "miniprogram-api-typings": "^2.10.3-1",
+    "path": "0.12.7",
+    "rimraf": "~2.6.2",
+    "tslint": "~5.8.0",
+    "tslint-no-circular-imports": "~0.5.0",
+    "typescript": "^3.3.3333"
+  }
+}
